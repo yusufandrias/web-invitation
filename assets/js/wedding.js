@@ -10,8 +10,14 @@ var slickOptions = {
 },
 $slick = $('.hero-slider');
 
+
+$('body').bind('touchmove', function(e){e.preventDefault()});
+
+
 $('#open-invitaion').click(function(){
     $('.home-invitation').fadeOut(2400);
+    $('body').unbind('touchmove');
+    $('body').removeClass('stop-scrolling');
     $slick.slick('slickSetOption', {
         autoplay: true
     });
