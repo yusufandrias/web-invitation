@@ -37,3 +37,9 @@ $('#cd').countdown({
 }, function (container) {
     alert('Done!');
 });
+
+
+var url_string = window.location.href;
+var url = new URL(url_string);
+var to = url.searchParams.get("to") ?? 'Anda';
+document.getElementById('nama-tamu').innerText = to;
