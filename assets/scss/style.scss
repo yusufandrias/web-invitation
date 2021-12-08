@@ -500,3 +500,38 @@ body{
         grid-template-columns: 1fr;
     }
 }
+
+
+.quote-section{
+    padding: 170px 30px;
+    background: url('../images/quote-bg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba($creamy, 0.6);
+        z-index: 0;
+        backdrop-filter: blur(6px);
+    }
+
+    .quote-container{
+        text-align: center;
+        font-size: 28px;
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+        text-shadow: 0px 3px 6px $pink2;
+        color: #484747;
+        .surah{
+            font-size: 16px;
+            margin-top: 60px;
+        }
+    }
+}
