@@ -21,6 +21,7 @@ $('#open-invitaion').click(function(){
     $slick.slick('slickSetOption', {
         autoplay: true
     });
+    $('#audio').trigger('play');
 });
 
 $slick.slick(slickOptions);
