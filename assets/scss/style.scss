@@ -178,8 +178,7 @@ body{
     max-width: 700px;
     padding: 40px;
     text-align: center;
-    color: white;
-    text-shadow: 0px 3px 5px rgba($pink2, 0.6);
+    color: #f58585;
     font-size: 16px;
 
     .calon-pengantin{
@@ -559,4 +558,8 @@ body{
 .stop-scrolling {
   height: 100vh;
   overflow: hidden;
+}
+
+audio{
+    display: none;
 }
