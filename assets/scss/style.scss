@@ -44,7 +44,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba($creamy, 0.7);
+    background-color: rgba(244, 131, 131, 0.89);
+    // background-color: $pink2;
     backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
@@ -68,7 +69,25 @@ body{
         font-size: 56px;
         font-weight: 500;
         margin-bottom: 15px;
-        text-shadow: 0px 4px 7px rgba($pink2, 0.57);
+        text-shadow: 0px 4px 22px rgba(251, 255, 226, 88%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        div{
+            margin: 0;
+            font-size: 28px;
+        }
+    }
+
+    @media screen and(max-width: 378px) {
+        .calon-pengantin{
+            width: 170px;
+            margin: auto;
+            margin-bottom: 40px;
+            display: grid;
+            gap: 6px;
+        }
     }
 
     .sm-text{
@@ -91,6 +110,7 @@ body{
         color: white;
         font-family: $merri;
         transition: all linear 0.4s;
+        box-shadow: 0px 5px 10px rgba(203, 121, 121, 83%);
         &:hover{
             background-color: $creamy;
             color: $text_color;
